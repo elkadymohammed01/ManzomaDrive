@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "115854799981",
+    "project_id": "mycar-1701a",
+    "storage_bucket": "mycar-1701a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115854799981:android:6f2c48eb6ac14715553b64",
+        "android_client_info": {
+          "package_name": "com.great.mycar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115854799981-3kvt856nmtglqt0vovv4rg6ifcjp27c2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6AeF20I0f7EM8F_-Vax3Xu_ud_eFPVSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115854799981-3kvt856nmtglqt0vovv4rg6ifcjp27c2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
