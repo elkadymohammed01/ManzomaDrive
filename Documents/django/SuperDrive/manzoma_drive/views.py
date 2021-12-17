@@ -303,3 +303,5 @@ def move_file(request):
         show_view(request)
 
     return render(request, 'new_post.html', {'list_file': files, 'list_dir': dirs ,'path' : path})
+
+# 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
