@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div >
+<p>
+{% for file in list_dir %}
+    <a href='{{ path }}+{{ file.title }}'>
+    <img src="../static/blog/images/foulder.png" width="7%" height="7%" />
+        {{ file.nike_name }}
+    </a>
+
+{% endfor %}
+</p>
+<p>
+{% for file in list_file %}
+
+     <div class="card" style="width: 98%">
+     <div class="row">
+         <div class="column" >
+  <a href='/file/{{ path }}/{{ file.title }}' >
+    <img src="../static/blog/images/file.png"  alt="Avatar" style="width:10%">
+  <div class="container">
+    <h4><b>{{ file.title }}</b></h4>
+      <h4><b>Size : {{ file.size }}</b></h4>
+      <h4><b>Adding Time : {{ file.adding_time }}</b></h4>
+  </div>
+        </a>
+ </div>
+        <div>
+            <p></p>
+            <a href="/share{{ path }}/{{ file.title }}">
+    <button  style="font-family: 'Tajawal', sans-serif; padding: 12px 28px;font-size: 16px ;background-color: #0069d9;; border-radius: 8px;"> مشاركة</button>
+            </a>
+                <p></p>
+            <a href="/delete{{ path }}/{{ file.title }}">
+    <button  style="font-family: 'Tajawal', sans-serif; padding: 12px 28px;font-size: 16px ;background-color: #b21f2d;border-radius: 8px;"> حذف </button>
+            </a>
+                <p></p>
+            <a href="/move{{ path }}/{{ file.title }}">
+    <button  style="font-family: 'Tajawal', sans-serif; padding: 12px 28px;font-size: 16px ; background-color: #1c7430;border-radius: 8px; "> نقل </button>
+
+            </a>
+        </div>
+     </div>
+
+</div>
+
+
+{% endfor %}
+</p>
+    <legend class="border-bottom pb-1 mb-3">تدوينة جديدة</legend>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div>
+        {{form}}
+        <input class="btn btn-secondary mt-4" type="submit" value="نشر">
+        </div>
+    </form>
+</div>
+{% endblock content %}

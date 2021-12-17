@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Tajawal';
+    src: url('../fonts/Tajawal-Regular.ttf')  format("truetype"),
+         local('Tajawal');
+  }
+
+html, body{
+    direction: rtl;
+    text-align: right;
+}
+
+body{
+    font-family: 'Tajawal', sans-serif;
+}
+
+.dropdown-menu .dropdown-item{
+    text-align: right;
+}
+
+.bg-secondary{
+    background-color: #666 !important;
+}
+
+.bg-light{
+    background-color: #EEE !important;
+}
+
+/* Start Sidebar */
+.latest-post, .latest-comment{
+    padding: 0 15px;
+    
+}
+.latest-post .latest-post-item, .latest-comment .latest-comment-item{
+    padding: 6px;
+}
+
+.latest-post li:first-child, .latest-comment li:first-child{
+    border-top: 0;
+}
+
+.latest-post li:last-child, .latest-comment li:last-child{
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* End Sidebar */
+
+/* Start Comment */
+.comment{
+    background-color: #f8f8f8;
+    border: 12px dashed #CCC;
+}
+/* End Comment */
+
+.btn-editing{
+    float: left;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 4px 16px;
+}
+
+.back-btn{
+    float: left;
+}
+.column {
+  flex: 55%;
+}

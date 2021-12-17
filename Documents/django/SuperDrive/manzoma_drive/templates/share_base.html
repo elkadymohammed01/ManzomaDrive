@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="border p-4 mb-5">
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button style="font-family: Tajawal ; padding: 12px 28px;font-size: 16px ;
+     border-radius : 12px ;background-color: #0f6674 ;" type="submit">مشاركة الملف</button>
+</form>
+</div>
+
+{% endblock content %}
